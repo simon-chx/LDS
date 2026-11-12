@@ -1,13 +1,13 @@
-The following ActorDefinitions define the systems that plays a role in data exchange, and that have obligations associated with the role the actor plays, in Health Connect.
+The following ActorDefinitions define the systems that plays a role in data exchange, and that have obligations associated with the role the actor plays, in an instance of the HIPS Local Directory Solution.
 
-- [Health Connect Provider Directory Requester Actor](ActorDefinition-requester-actor-health-connect.html)
+- [HIPS Local Directory Solution Searcher Actor](ActorDefinition-requester-actor-health-connect.html)
 
-The Health Connect Provider Directory Requester is a system that creates and initiates a data access request to retrieve core digital health and administrative information. The set of capabilities (behaviours) for this actor is defined in [Health Connect Provider Directory Requester CapabilityStatement](CapabilityStatement-health-connect-provider-directory-requester.html).
+The HIPS Local Directory Solution Searcher is a clinical or administrative system at a HIPS LDS site that creates and initiates a data access request to retrieve provider directory information from LDS. The set of capabilities (behaviours) for this actor is defined in [HIPS Local Directory Solution Searcher CapabilityStatement](CapabilityStatement-health-connect-provider-directory-requester.html).
 
-- [Health Connect Provider Directory Responder Actor](ActorDefinition-responder-actor-health-connect.html)
+- [HIPS Local Directory Solution Enrichment Actor](ActorDefinition-bulk-export-requester-actor-health-connect.html)
 
-The Health Connect Provider Directory Responder is a system that retrieves core digital health and administrative information. The set of capabilities (behaviours) for this actor is defined in [Health Connect Provider Directory Responder CapabilityStatement](CapabilityStatement-health-connect-provider-directory-responder.html).
+The Health Connect Provider Directory Enrichment Actor is an administrative system at a HIPS LDS site that provides additional information to store in the local directory, beyond that which is syndicated from the national directory. The set of capabilities (behaviours) for this actor is defined in [Health Connect Provider Directory Enrichment Actor CapabilityStatement](CapabilityStatement-health-connect-bulk-export-requester.html).
 
-- [Health Connect Provider Directory Bulk Export Requester Actor](ActorDefinition-bulk-export-requester-actor-health-connect.html)
+- [HIPS Local Directory Solution Repository Actor](ActorDefinition-responder-actor-health-connect.html)
 
-The Health Connect Provider Directory Bulk Export Requester is a system that initiates bulk data export requests from the Health Connect Provider Directory system. This actor is specifically designed for bulk export operations and is responsible for submitting properly formatted export parameters and processing returned bulk data files. Implementers **SHALL** respect the `suppressed` and `deactivated-by` extensions on returned resources, filtering these resources before displaying them to end consumers of the HCPD. The set of capabilities (behaviours) for this actor is defined in [Health Connect Provider Directory Bulk Export Requester CapabilityStatement](CapabilityStatement-health-connect-bulk-export-requester.html).
+The HIPS Local Directory Solution Repository is the LDS component that stores and allows syndication, storage, export, searching and local enrichment of provider directory information. The set of capabilities (behaviours) for this actor is defined in [HIPS Local Directory Solution Repository CapabilityStatement](CapabilityStatement-health-connect-provider-directory-responder.html).

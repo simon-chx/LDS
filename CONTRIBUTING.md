@@ -29,5 +29,5 @@ Before making a contribution, please read the
 
 ## Contact us
 
-You can alo raise a query about this code, by emailing:
+You can also raise a query about this code, by emailing:
 [help@digitalhealth.gov.au](mailto:help@digitalhealth.gov.au)
